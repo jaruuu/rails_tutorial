@@ -39,3 +39,13 @@ $ rails server
 
 詳しくは、[*Ruby on Rails チュートリアル*](https://railstutorial.jp/)
 を参考にしてください。
+
+## コードチェック
+コードチェックには pronto を通じて haml-lint と rubocop が実行されます
+```
+# コミット済みのものに対して pronto を実行します
+$ bundle exec pronto run
+
+# stage されていないものに対して pronto を実行します
+$ bundle exec pronto run --unstaged
+```
